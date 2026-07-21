@@ -13,6 +13,15 @@ N_RIDES = 2000
 
 
 def generate_clients(n=N_CLIENTS):
+    """Gera um DataFrame com dados sintéticos de clientes.
+
+    Args:
+        n (int): Número de clientes a gerar. Padrão: N_CLIENTS.
+
+    Returns:
+        pd.DataFrame: DataFrame com as colunas client_id, name, city,
+            signup_date e is_active.
+    """
     return pd.DataFrame([
         {
             "client_id": i + 1,
@@ -26,6 +35,15 @@ def generate_clients(n=N_CLIENTS):
 
 
 def generate_vehicles(n=N_VEHICLES):
+    """Gera um DataFrame com dados sintéticos de veículos.
+
+    Args:
+        n (int): Número de veículos a gerar. Padrão: N_VEHICLES.
+
+    Returns:
+        pd.DataFrame: DataFrame com as colunas vehicle_id, type, plate e year.
+            O campo type pode ser 'car', 'bike' ou 'scooter'.
+    """
     vehicle_types = ["car", "bike", "scooter"]
     return pd.DataFrame([
         {
@@ -39,6 +57,20 @@ def generate_vehicles(n=N_VEHICLES):
 
 
 def generate_rides(n=N_RIDES, n_clients=N_CLIENTS, n_vehicles=N_VEHICLES):
+    """Gera um DataFrame com dados sintéticos de corridas.
+
+    Cada corrida referencia um cliente e um veículo existentes via seus IDs.
+    A tarifa é calculada com base na distância e em um multiplicador aleatório.
+
+    Args:
+        n (int): Número de corridas a gerar. Padrão: N_RIDES.
+        n_clients (int): Número máximo de client_id disponíveis. Padrão: N_CLIENTS.
+        n_vehicles (int): Número máximo de vehicle_id disponíveis. Padrão: N_VEHICLES.
+
+    Returns:
+        pd.DataFrame: DataFrame com as colunas ride_id, client_id, vehicle_id,
+            start_time, end_time, distance_km e fare.
+    """
     rides = []
     for i in range(n):
         start_time = fake.date_time_between(start_date="-90d", end_date="now")
