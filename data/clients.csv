@@ -1,0 +1,201 @@
+client_id,name,city,signup_date,is_active
+1,Brenda Alves,da Cruz de Goiás,2024-10-30,True
+2,Yago Borges,Andrade do Sul,2024-09-26,True
+3,Thiago Pereira,Novais,2024-12-12,True
+4,Ísis Leão,Machado,2025-09-23,True
+5,Emanuel Sampaio,Fernandes Paulista,2024-11-10,True
+6,Sr. Caleb Garcia,Fogaça,2026-03-31,True
+7,Julia Aparecida,Nascimento de Campos,2026-07-01,True
+8,Anna Liz Novaes,Pires da Praia,2025-09-15,True
+9,Srta. Ana Clara Ribeiro,Vargas,2025-02-16,False
+10,Igor Brito,da Mota dos Dourados,2025-10-27,True
+11,Sr. Léo Fogaça,Rios,2025-01-31,True
+12,Ana Sophia Pereira,Nascimento,2026-01-03,True
+13,Ravi Garcia,Porto da Prata,2024-12-27,True
+14,Sr. Ian Andrade,Guerra Paulista,2024-09-06,True
+15,Luara Cunha,Gonçalves de Ramos,2025-06-20,True
+16,Davi Miguel da Cruz,Souza Verde,2025-05-29,True
+17,Maria Liz Fonseca,Carvalho,2025-07-27,False
+18,Benicio Camargo,Pires,2024-11-13,True
+19,Mariana Peixoto,Gomes,2025-04-24,False
+20,Vitória da Cunha,Rodrigues,2025-12-28,True
+21,Zoe Sá,Vargas Alegre,2024-10-09,True
+22,Eduarda Marques,Silveira,2026-04-21,True
+23,Theodoro Teixeira,Montenegro,2026-05-18,False
+24,Letícia Porto,Cassiano,2025-04-19,True
+25,Vitor Hugo Vasconcelos,Peixoto,2025-03-13,True
+26,Daniel Fonseca,da Costa do Norte,2025-01-12,True
+27,Anna Liz Barros,Azevedo de Teixeira,2025-08-13,True
+28,Davi Lucas Ribeiro,Novaes de Cavalcante,2025-01-29,True
+29,Mariana Cunha,Silva,2025-03-04,True
+30,Maria Fernanda Macedo,Campos de da Cruz,2024-12-31,True
+31,Sr. Yuri da Conceição,Abreu,2024-09-09,False
+32,Ana Liz da Conceição,Andrade,2026-04-09,True
+33,Théo da Costa,Rios do Amparo,2024-12-23,True
+34,Renan da Cruz,Jesus de Correia,2024-09-26,True
+35,Marina Fogaça,Jesus dos Dourados,2026-04-12,True
+36,Carlos Eduardo Araújo,Siqueira Alegre,2026-02-25,True
+37,Josué Correia,Nascimento,2025-06-12,False
+38,Emilly da Mota,da Cruz de Barbosa,2025-06-08,True
+39,Beatriz Aragão,Borges,2026-05-28,False
+40,Enzo Jesus,Mendes de Cunha,2026-04-13,True
+41,Enzo Garcia,Gomes,2025-01-29,True
+42,Laura Lima,Cassiano de Correia,2025-02-21,True
+43,Vitor Hugo Araújo,Araújo do Norte,2025-09-20,True
+44,Vitória Castro,Moraes,2024-09-16,True
+45,Bernardo Peixoto,Rocha,2026-04-10,True
+46,Bárbara Nunes,Pacheco,2025-09-27,True
+47,Anna Liz Leão,da Luz do Oeste,2025-11-21,True
+48,Sr. João Gonçalves,Rios,2025-11-03,True
+49,Luara Sá,Albuquerque,2025-06-20,True
+50,Beatriz Barbosa,Montenegro,2025-01-29,True
+51,Sr. Joaquim Freitas,Castro dos Dourados,2026-03-21,False
+52,Sra. Vitória Albuquerque,Ribeiro do Campo,2026-06-06,True
+53,João Camargo,Souza,2025-08-28,False
+54,João Miguel Pereira,Silva,2025-03-27,True
+55,Julia Montenegro,da Cunha de Aragão,2024-09-25,True
+56,Kamilly Aparecida,Farias,2026-02-03,True
+57,Julia Castro,Novaes de Santos,2025-05-28,True
+58,Daniel Barbosa,Nogueira,2024-08-15,True
+59,Sr. Pedro Cardoso,das Neves,2025-04-12,True
+60,Luiz Henrique Costela,Rios,2024-10-03,True
+61,Maria Luísa Pinto,da Costa,2026-04-13,True
+62,Noah Alves,Sousa,2026-05-26,True
+63,Isadora da Mata,Viana,2025-12-14,True
+64,Ana Carolina Melo,Costa,2026-03-08,False
+65,Marcela das Neves,Câmara,2024-08-06,False
+66,Murilo Farias,Azevedo Paulista,2025-04-02,True
+67,Maria Liz Rocha,Alves do Campo,2026-04-22,True
+68,Felipe Pacheco,Andrade do Campo,2025-09-29,True
+69,Dr. Pedro Henrique Pereira,Gomes,2026-05-08,True
+70,José Miguel Aparecida,Abreu do Galho,2026-05-27,True
+71,Fernanda Fonseca,Azevedo Alegre,2025-10-18,True
+72,Camila Silveira,Montenegro da Mata,2025-11-19,True
+73,Dr. Juan Novaes,Correia,2025-05-23,False
+74,Emanuella Pimenta,Guerra da Prata,2026-03-21,True
+75,João Pedro Costela,Viana Verde,2025-10-06,True
+76,Dr. Pedro Miguel Macedo,Moraes,2025-06-30,True
+77,Srta. Antonella da Paz,Borges de Goiás,2025-11-23,True
+78,Gael Henrique Casa Grande,Aparecida,2025-01-14,True
+79,Ana Sophia Marques,Pires Verde,2024-12-09,False
+80,Sra. Sabrina Guerra,Casa Grande,2025-11-11,False
+81,Cauê Vasconcelos,Câmara da Serra,2026-02-27,False
+82,Dra. Nicole Aragão,Campos,2025-06-18,True
+83,Vitória Novais,Sá dos Dourados,2025-10-10,True
+84,Dra. Mariane Novaes,Castro de Souza,2026-04-10,True
+85,Joana Sá,Porto,2025-02-07,True
+86,Raquel Pires,da Mota,2025-06-06,True
+87,Sra. Isabela da Mata,Dias da Prata,2024-09-16,False
+88,Igor Gomes,Santos,2024-12-23,False
+89,Maria Luísa Farias,Leão de Araújo,2024-12-18,True
+90,Maria Julia Vargas,Teixeira,2025-09-13,True
+91,Alana Fogaça,Sá das Flores,2026-04-04,True
+92,Zoe Souza,Mendonça,2024-12-27,False
+93,Raquel Alves,Fernandes das Flores,2025-12-31,True
+94,Carolina Pinto,Gonçalves,2025-09-25,True
+95,Amanda Barros,Carvalho dos Dourados,2024-11-29,True
+96,Mateus Duarte,Marques,2025-03-15,True
+97,Lara Sá,da Cunha de Minas,2025-06-28,True
+98,Dra. Ana Júlia Ferreira,Rezende,2024-09-08,False
+99,Ana Cecília Sá,da Cruz,2024-12-12,True
+100,Eduardo da Costa,Melo,2025-11-21,False
+101,Helena Martins,Vargas da Praia,2024-11-19,False
+102,Bruna Vasconcelos,das Neves,2024-10-07,False
+103,Leonardo Oliveira,Gonçalves do Oeste,2024-09-13,True
+104,Dra. Isabelly Caldeira,Rodrigues do Campo,2026-02-22,True
+105,Ana Cecília Ferreira,Ribeiro da Praia,2024-09-08,True
+106,Manuela Albuquerque,Mendonça do Campo,2025-06-01,True
+107,Dr. Eduardo Lopes,Siqueira,2025-08-05,True
+108,Júlia Pimenta,Martins de Lopes,2026-03-15,True
+109,Juliana Duarte,Borges,2025-02-08,True
+110,Isabelly Sá,Nunes de Pimenta,2025-11-20,False
+111,Sr. Thales Duarte,Mendonça,2024-12-22,True
+112,Luigi da Mota,Novais do Sul,2025-08-01,False
+113,Bryan da Costa,Mendonça da Prata,2026-01-25,True
+114,Sra. Rebeca Machado,Borges,2025-02-20,True
+115,Isabelly das Neves,Melo da Prata,2025-08-12,True
+116,Luísa Fogaça,da Mata de das Neves,2025-01-19,True
+117,Gael Dias,Souza,2025-08-15,True
+118,Srta. Evelyn Cunha,da Mota de Silveira,2025-09-23,True
+119,Larissa Brito,da Rocha,2025-01-02,True
+120,Kevin Albuquerque,da Mota,2024-08-22,True
+121,Yuri da Rocha,Porto,2026-04-15,True
+122,Bella Albuquerque,Melo do Amparo,2025-06-06,True
+123,Benjamim da Cunha,Camargo de Azevedo,2025-05-08,True
+124,Benjamim Cassiano,Nunes,2026-06-13,False
+125,Josué Campos,Pereira de Goiás,2026-02-07,True
+126,Milena Macedo,Pastor das Pedras,2025-02-28,True
+127,Ana Liz Pimenta,Teixeira,2024-12-18,True
+128,João Ribeiro,Castro,2025-01-11,True
+129,Ana Vitória Castro,Jesus,2025-06-14,True
+130,Olivia da Rocha,da Conceição,2025-02-15,True
+131,Rafael Barbosa,da Luz,2026-02-15,True
+132,Fernanda Lima,Nogueira,2024-12-31,True
+133,João Felipe Casa Grande,Araújo,2024-11-18,True
+134,João Pedro Macedo,Martins,2025-12-05,False
+135,Sra. Júlia Montenegro,Macedo de Barros,2025-09-30,True
+136,Luna Pereira,Alves de Minas,2025-01-03,True
+137,Alícia Teixeira,Oliveira do Norte,2026-01-28,True
+138,Ravy Moreira,da Mota de Cirino,2026-07-18,False
+139,Rebeca Borges,Ferreira de Jesus,2025-03-20,True
+140,Bella Castro,Jesus do Amparo,2025-02-15,True
+141,Ana Carolina Marques,Dias,2025-01-20,False
+142,Nathan Moraes,Ribeiro,2026-04-16,True
+143,Maria Sophia Aragão,Moreira,2025-04-10,True
+144,Melina Teixeira,Costela,2025-01-31,True
+145,João Pedro Macedo,Campos de Alves,2026-07-01,False
+146,Isabella Santos,das Neves,2025-08-26,True
+147,Maria Luísa Borges,Camargo,2025-06-22,False
+148,Eduardo Monteiro,Moraes Paulista,2025-05-19,False
+149,Olivia da Cruz,Novaes de Casa Grande,2025-04-26,True
+150,Sophia Souza,Azevedo,2025-02-06,True
+151,Manuela Viana,Abreu da Mata,2026-01-01,True
+152,Rebeca Cassiano,Nascimento de Mendes,2025-03-29,True
+153,Ísis Garcia,Duarte de Correia,2026-07-06,True
+154,Matheus da Conceição,Aparecida Alegre,2026-01-15,True
+155,Sra. Maria Isis Ribeiro,Monteiro,2026-06-25,True
+156,Theodoro Pastor,Brito dos Dourados,2024-09-30,True
+157,Alice Silveira,Jesus,2026-04-17,True
+158,Breno Melo,Fernandes das Flores,2025-11-07,True
+159,Dr. Liam Pires,Nogueira de Andrade,2025-10-14,True
+160,João Pedro da Conceição,Lopes,2026-07-05,True
+161,Beatriz Macedo,Sales,2025-02-23,True
+162,Augusto Duarte,da Rocha,2025-04-08,True
+163,Clara da Cruz,Nunes da Serra,2024-11-21,True
+164,Mateus Pinto,Monteiro,2026-05-18,True
+165,Igor Martins,Marques Paulista,2025-11-19,True
+166,Laura Rocha,Barbosa,2025-06-07,True
+167,Dr. Otávio Sales,Marques da Mata,2024-12-12,False
+168,Rafaela Caldeira,Garcia,2025-09-11,True
+169,Laís Sampaio,Almeida das Flores,2025-02-05,True
+170,Ana Julia Pereira,da Paz de Vasconcelos,2026-02-23,False
+171,Maria Câmara,Pinto,2025-01-19,True
+172,Dra. Cecilia Pires,Pires,2025-11-04,False
+173,Pedro Lucas Andrade,Siqueira Grande,2024-09-23,False
+174,Luan Souza,Cavalcanti do Oeste,2024-10-24,True
+175,Maria Clara Moura,Cavalcante Paulista,2026-05-19,True
+176,Laís Souza,Camargo dos Dourados,2026-06-23,True
+177,Henry Gabriel Rocha,Novais da Praia,2024-09-24,False
+178,Alice da Luz,Marques,2025-04-15,True
+179,Dra. Julia Pacheco,Porto da Praia,2024-10-07,False
+180,Ravy Alves,Pimenta de Goiás,2025-11-05,False
+181,Nicole Sampaio,Rezende das Pedras,2024-10-13,False
+182,Arthur Miguel da Rosa,Camargo de Brito,2025-01-07,True
+183,Catarina Gomes,Freitas de Rios,2026-06-13,True
+184,Dra. Mariah Pastor,Leão,2025-11-10,True
+185,Maria Luísa da Mota,Sales,2025-04-16,False
+186,Melina da Costa,Brito da Praia,2025-08-22,True
+187,Maria Alice Araújo,da Mota do Oeste,2026-06-27,True
+188,Ayla Ribeiro,Ramos,2025-10-30,True
+189,Benicio Viana,da Cruz Grande,2026-02-15,True
+190,Bernardo Teixeira,Pastor,2024-12-24,True
+191,Lucas Vasconcelos,Viana,2026-05-09,False
+192,João Guilherme Casa Grande,Nogueira,2025-01-19,True
+193,Daniel Ribeiro,Cardoso,2024-07-30,False
+194,Lorenzo Almeida,da Luz,2024-08-27,True
+195,Sra. Valentina Camargo,Melo,2025-06-12,True
+196,Sr. Rael Montenegro,Pimenta,2024-08-20,False
+197,Stephany da Rosa,Ramos de Alves,2024-09-02,True
+198,Maria Liz Lima,Mendonça,2025-12-22,True
+199,Ana Sophia Barros,Pereira Grande,2024-09-06,False
+200,Yan Silva,Garcia do Galho,2025-02-20,True
