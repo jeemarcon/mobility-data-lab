@@ -1,0 +1,62 @@
+[
+  {
+    "column": "client_id",
+    "rule": "client_id IS NOT NULL",
+    "reason": "identificador do cliente não pode ser nulo"
+  },
+  {
+    "column": "client_id",
+    "rule": "client_id > 0",
+    "reason": "identificador do cliente deve ser um valor positivo"
+  },
+  {
+    "column": "name",
+    "rule": "name IS NOT NULL",
+    "reason": "nome do cliente não pode ser nulo"
+  },
+  {
+    "column": "name",
+    "rule": "LENGTH(TRIM(name)) > 0",
+    "reason": "nome do cliente não pode ser uma string vazia ou apenas espaços"
+  },
+  {
+    "column": "name",
+    "rule": "LENGTH(name) <= 255",
+    "reason": "nome do cliente não deve exceder o tamanho razoável de um VARCHAR"
+  },
+  {
+    "column": "city",
+    "rule": "city IS NOT NULL",
+    "reason": "cidade do cliente não pode ser nula"
+  },
+  {
+    "column": "city",
+    "rule": "LENGTH(TRIM(city)) > 0",
+    "reason": "cidade do cliente não pode ser uma string vazia ou apenas espaços"
+  },
+  {
+    "column": "city",
+    "rule": "LENGTH(city) <= 100",
+    "reason": "nome de cidade não deve exceder tamanho razoável"
+  },
+  {
+    "column": "signup_date",
+    "rule": "signup_date IS NOT NULL",
+    "reason": "data de cadastro não pode ser nula"
+  },
+  {
+    "column": "signup_date",
+    "rule": "signup_date >= '2000-01-01'",
+    "reason": "data de cadastro não deve ser anterior a um limite mínimo razoável de operação do negócio"
+  },
+  {
+    "column": "signup_date",
+    "rule": "signup_date <= CURRENT_DATE()",
+    "reason": "data de cadastro não pode ser uma data futura"
+  },
+  {
+    "column": "is_active",
+    "rule": "is_active IS NOT NULL",
+    "reason": "flag de cliente ativo não pode ser nula, deve ser explicitamente verdadeiro ou falso"
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "column": "ride_id",
+    "rule": "ride_id IS NOT NULL",
+    "reason": "identificador da corrida não pode ser nulo"
+  },
+  {
+    "column": "ride_id",
+    "rule": "ride_id > 0",
+    "reason": "identificador da corrida deve ser um valor positivo"
+  },
+  {
+    "column": "client_id",
+    "rule": "client_id IS NOT NULL",
+    "reason": "identificador do cliente não pode ser nulo"
+  },
+  {
+    "column": "client_id",
+    "rule": "client_id > 0",
+    "reason": "identificador do cliente deve ser um valor positivo"
+  },
+  {
+    "column": "vehicle_id",
+    "rule": "vehicle_id IS NOT NULL",
+    "reason": "identificador do veículo não pode ser nulo"
+  },
+  {
+    "column": "vehicle_id",
+    "rule": "vehicle_id > 0",
+    "reason": "identificador do veículo deve ser um valor positivo"
+  },
+  {
+    "column": "start_time",
+    "rule": "start_time IS NOT NULL",
+    "reason": "horário de início da corrida não pode ser nulo"
+  },
+  {
+    "column": "end_time",
+    "rule": "end_time IS NOT NULL",
+    "reason": "horário de término da corrida não pode ser nulo"
+  },
+  {
+    "column": "end_time",
+    "rule": "end_time > start_time",
+    "reason": "horário de término deve ser posterior ao horário de início"
+  },
+  {
+    "column": "start_time",
+    "rule": "start_time >= '2000-01-01'",
+    "reason": "horário de início não deve ser uma data implausível anterior ao ano 2000"
+  },
+  {
+    "column": "end_time",
+    "rule": "end_time <= current_timestamp()",
+    "reason": "horário de término não pode ser uma data futura"
+  },
+  {
+    "column": "distance_km",
+    "rule": "distance_km IS NOT NULL",
+    "reason": "distância percorrida não pode ser nula"
+  },
+  {
+    "column": "distance_km",
+    "rule": "distance_km >= 0",
+    "reason": "distância não pode ser negativa"
+  },
+  {
+    "column": "distance_km",
+    "rule": "distance_km <= 5000",
+    "reason": "distância acima de 5000 km é implausível para uma única corrida"
+  },
+  {
+    "column": "fare",
+    "rule": "fare IS NOT NULL",
+    "reason": "valor da tarifa não pode ser nulo"
+  },
+  {
+    "column": "fare",
+    "rule": "fare >= 0",
+    "reason": "valor da tarifa não pode ser negativo"
+  },
+  {
+    "column": "fare",
+    "rule": "fare <= 100000",
+    "reason": "valor da tarifa acima de 100000 é implausível e pode indicar erro de entrada"
+  },
+  {
+    "column": "distance_km",
+    "rule": "NOT (distance_km = 0 AND fare > 0)",
+    "reason": "corrida com distância zero não deveria gerar tarifa positiva"
+  },
+  {
+    "column": "distance_km",
+    "rule": "NOT (distance_km > 0 AND fare = 0)",
+    "reason": "corrida com distância percorrida não deveria ter tarifa zero"
+  }
+]
