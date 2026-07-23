@@ -1,0 +1,52 @@
+[
+  {
+    "column": "vehicle_id",
+    "rule": "vehicle_id IS NOT NULL",
+    "reason": "identificador do veículo não pode ser nulo"
+  },
+  {
+    "column": "vehicle_id",
+    "rule": "vehicle_id > 0",
+    "reason": "identificador do veículo deve ser um valor positivo"
+  },
+  {
+    "column": "type",
+    "rule": "type IS NOT NULL",
+    "reason": "tipo do veículo não pode ser nulo"
+  },
+  {
+    "column": "type",
+    "rule": "type IN ('car', 'truck', 'motorcycle', 'bus', 'van', 'SUV', 'pickup')",
+    "reason": "tipo do veículo deve pertencer a um conjunto de valores válidos conhecidos"
+  },
+  {
+    "column": "plate",
+    "rule": "plate IS NOT NULL",
+    "reason": "placa do veículo não pode ser nula"
+  },
+  {
+    "column": "plate",
+    "rule": "LENGTH(plate) >= 4",
+    "reason": "placa do veículo deve ter ao menos 4 caracteres para ser válida"
+  },
+  {
+    "column": "plate",
+    "rule": "plate NOT LIKE '% %'",
+    "reason": "placa do veículo não deve conter espaços em branco"
+  },
+  {
+    "column": "year",
+    "rule": "year IS NOT NULL",
+    "reason": "ano do veículo não pode ser nulo"
+  },
+  {
+    "column": "year",
+    "rule": "year >= 1886",
+    "reason": "ano do veículo não pode ser anterior ao primeiro automóvel da história (1886)"
+  },
+  {
+    "column": "year",
+    "rule": "year <= YEAR(CURRENT_DATE())",
+    "reason": "ano do veículo não pode ser maior que o ano corrente"
+  }
+]
