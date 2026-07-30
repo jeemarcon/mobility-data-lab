@@ -2,61 +2,73 @@
   {
     "column": "client_id",
     "rule": "client_id IS NOT NULL",
-    "reason": "identificador do cliente não pode ser nulo"
+    "reason": "identificador do cliente não pode ser nulo",
+    "on_violation": "drop"
   },
   {
     "column": "client_id",
     "rule": "client_id > 0",
-    "reason": "identificador do cliente deve ser um valor positivo"
+    "reason": "identificador do cliente deve ser um valor positivo",
+    "on_violation": "drop"
   },
   {
     "column": "name",
     "rule": "name IS NOT NULL",
-    "reason": "nome do cliente não pode ser nulo"
+    "reason": "nome do cliente não pode ser nulo",
+    "on_violation": "drop"
   },
   {
     "column": "name",
     "rule": "LENGTH(TRIM(name)) > 0",
-    "reason": "nome do cliente não pode ser uma string vazia ou apenas espaços"
+    "reason": "nome do cliente não pode ser uma string vazia ou apenas espaços",
+    "on_violation": "drop"
   },
   {
     "column": "name",
     "rule": "LENGTH(name) <= 255",
-    "reason": "nome do cliente não deve exceder o tamanho razoável de um VARCHAR"
+    "reason": "nome do cliente não deve exceder o tamanho razoável de um VARCHAR",
+    "on_violation": "warn"
   },
   {
     "column": "city",
     "rule": "city IS NOT NULL",
-    "reason": "cidade do cliente não pode ser nula"
+    "reason": "cidade do cliente não pode ser nula",
+    "on_violation": "warn"
   },
   {
     "column": "city",
     "rule": "LENGTH(TRIM(city)) > 0",
-    "reason": "cidade do cliente não pode ser uma string vazia ou apenas espaços"
+    "reason": "cidade do cliente não pode ser uma string vazia ou apenas espaços",
+    "on_violation": "warn"
   },
   {
     "column": "city",
     "rule": "LENGTH(city) <= 100",
-    "reason": "nome de cidade não deve exceder tamanho razoável"
+    "reason": "nome de cidade não deve exceder tamanho razoável",
+    "on_violation": "warn"
   },
   {
     "column": "signup_date",
     "rule": "signup_date IS NOT NULL",
-    "reason": "data de cadastro não pode ser nula"
+    "reason": "data de cadastro não pode ser nula",
+    "on_violation": "warn"
   },
   {
     "column": "signup_date",
     "rule": "signup_date >= '2000-01-01'",
-    "reason": "data de cadastro não deve ser anterior a um limite mínimo razoável de operação do negócio"
+    "reason": "data de cadastro não deve ser anterior a um limite mínimo razoável de operação do negócio",
+    "on_violation": "warn"
   },
   {
     "column": "signup_date",
     "rule": "signup_date <= CURRENT_DATE()",
-    "reason": "data de cadastro não pode ser uma data futura"
+    "reason": "data de cadastro não pode ser uma data futura",
+    "on_violation": "warn"
   },
   {
     "column": "is_active",
     "rule": "is_active IS NOT NULL",
-    "reason": "flag de cliente ativo não pode ser nula, deve ser explicitamente verdadeiro ou falso"
+    "reason": "flag de cliente ativo não pode ser nula, deve ser explicitamente verdadeiro ou falso",
+    "on_violation": "warn"
   }
 ]

@@ -4,15 +4,14 @@ import os
 import re
 
 
-def sanitize_expectation_name(column: str, rule: str) -> str:
-    """Gera um nome de expectation válido e legível a partir da coluna e regra.
+def sanitize_expectation_name(column: str) -> str:
+    """Gera um nome de expectation válido em snake_case a partir do nome da coluna.
 
     Args:
         column: nome da coluna alvo da regra.
-        rule: expressão da regra (ex: "distance_km >= 0").
 
     Returns:
-        Nome curto em snake_case para usar como identificador da expectation.
+        Nome snake_case para usar como chave da expectation (ex: 'distance_km_valid').
     """
     slug = re.sub(r"[^a-zA-Z0-9_]", "_", column.lower())
     return f"{slug}_valid"
@@ -31,7 +30,7 @@ def rules_to_dlt_code(table_name: str, rules: list[dict]) -> str:
     """
     expectations = {}
     for r in rules:
-        name = sanitize_expectation_name(r["column"], r["rule"])
+        name = sanitize_expectation_name(r["column"])
         # evita nomes duplicados quando há mais de uma regra pra mesma coluna
         base_name, i = name, 2
         while name in expectations:
@@ -45,9 +44,11 @@ def rules_to_dlt_code(table_name: str, rules: list[dict]) -> str:
         f"# Expectations geradas a partir de docs/quality_rules_{table_name}.json",
         "EXPECTATIONS = {",
     ]
-    for r in rules:
-        name = sanitize_expectation_name(r["column"], r["rule"])
-        lines.append(f'    "{name}": "{r["rule"]}",  # {r["reason"]}')
+    # usa o dict já deduplicado para garantir chaves únicas no código gerado
+    rule_by_name = {name: r for name, r in zip(expectations.keys(), rules)}
+    for exp_name, rule_sql in expectations.items():
+        reason = rule_by_name[exp_name]["reason"]
+        lines.append(f'    "{exp_name}": "{rule_sql}",  # {reason}')
     lines.append("}")
     lines.append("")
     lines.append(f'@dlt.table(name="{table_name}_validated")')
