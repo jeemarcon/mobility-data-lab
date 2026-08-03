@@ -1,6 +1,13 @@
 [
   {
     "column": "ride_id",
+    "type": "uniqueness",
+    "rule": "ride_id",
+    "reason": "ride_id deve ser único — duplicatas indicam erro de ingestão",
+    "on_violation": "drop"
+  },
+  {
+    "column": "ride_id",
     "rule": "ride_id IS NOT NULL",
     "reason": "identificador da corrida não pode ser nulo",
     "on_violation": "drop"
