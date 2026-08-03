@@ -217,4 +217,7 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 .DS_Store
+
+# Jupyter notebooks (local exploration only)
+*.ipynb
 data/mobility.duckdb
